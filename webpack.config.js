@@ -8,6 +8,7 @@ module.exports = {
     filename: "bundle",
     clean: true,
   },
+  mode: process.env.NODE_ENV === "development" ? "development" : "production",
   plugins: [new HtmlWebpackPlugin()],
   module: {
     rules: [
